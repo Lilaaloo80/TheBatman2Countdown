@@ -24,7 +24,8 @@ if (timeleft < 0) {
     document.getElementById("days").innerHTML = ""
     document.getElementById("hours").innerHTML = "" 
     document.getElementById("mins").innerHTML = ""
-    document.getElementById("secs").innerHTML = ""
-    document.getElementById("end").innerHTML = "TIME UP!!";
+    document.getElementById("secs").innerHTML = "Go Run To Your Local Cinema!";
+    document.getElementById("end").innerHTML = "";
+    
 }
 }, 1000);
