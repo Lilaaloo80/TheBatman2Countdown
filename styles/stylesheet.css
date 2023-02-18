@@ -1,64 +1,60 @@
-html
+body
 {
-    background: url(../images/background.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    font-family: "Batman";
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    cursor: none
 }
-.text
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&family=Lexend:wght@100&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&display=swap');
+.hero
 {
-    gap: 15px;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: linear-gradient(#0c2c55b0    , #0a34558d), url("../images/background.png");
+}
+.hero-text
+{
+    font-size: 130px;
+    margin-top: -100px;
+    gap: 30px;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 120px;
+    justify-content: center;
+    display: flex;
+}
+.hero-text-batman
+{
     display: flex;
     justify-content: center;
-    margin-top: 25vh;
-}
-p
-{
-    display: flex;
     color: white;
     font-size: 50px;
-    flex-direction: row;
+    font-family: 'Josefin Sans', sans-serif;
+    transform: translate(-3%);
+    text-shadow: 
+      -0.2vw 0.4vw 0px #065187, 
+      -0.3vw 0.5vw 0px #043050
 }
-img
+.hero-text-batman h1
 {
-    width: 900px;
+    margin-top: 35vh;
 }
-.logo
+.date
 {
-    padding-top: 50px;
+    margin-top: -50px;
+    font-family: 'Josefin Sans', sans-serif;
     display: flex;
     justify-content: center;
-}
-@font-face {
-    font-family: "Batman";
-    src: url(../fonts/batman.ttf);
-}
-@media screen and (max-width:600px) {
-    img
-    {
-        width: 350px;
-    }
-    p
-    {
-        font-size: 25px;
-    }
-    .text
-    {
-        margin-top: 100px;
-        margin-left: 25vw;
-        flex-direction:column;
-    }
-}
-@media screen and (max-width:950px)
-{
-    img
-    {
-        width: 400px;
-    }
-    p
-    {
-        font-size: 25px;
-    }
+    font-size: 25px;
+    color: gray;
 }
